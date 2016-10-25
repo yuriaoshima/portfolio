@@ -1,0 +1,103 @@
+/*changing background color of webapge to be a light blue shade*/
+body {
+  background-color: rgba(138, 210, 219, 0.85);
+}
+
+/*styling h1 heading so that it looks white on a blue-ish background and is italic*/
+h1 {
+  color: azure;
+  font-size: 300%;
+  font-family: "Palatino Linotype";  
+  font-style: italic;
+  text-align: center;
+}
+
+/*styling h3 sub headings to be white-ish on a blue-ish background. Half the size of h1 headers and italic*/
+h3 {
+  color: azure;
+  font-size: 150%;
+  font-style: italic;
+  font-family: "Palatino Linotype";  
+  text-align: center;
+}
+
+/*styles all paragraphs to be white-ish on blue-ish background to be consistent. Dashed border for cute look. Padding and margin used to give the element space*/
+p {
+  color: azure;
+  font-size: 110%;
+  font-style: italic;
+  font-family: "Palatino Linotype";
+  border: 2px dashed white;
+  padding: 1em;
+  margin: 1em;
+}
+
+/*links are made white for consistency*/
+a {
+  color: azure;
+}
+
+/*images are given a border and margins. Also rounded for a nice look*/
+img {
+  border-radius: 8px;
+  border: 4px dashed azure;
+  margin: auto;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/*captions made smaller and centered with images*/
+figcaption {
+  color: azure;
+  font-size: 90%;
+  font-style: italic;
+  font-family: "Palatino Linotype";
+  text-align: center;
+}
+
+/*styling unordered list elements to be white-ish and limited width so that words look fitted inside border*/
+ul {
+  border: 2px dotted azure;
+  color: azure;
+  font-style: italic;
+  width: 30%;
+  margin: auto;
+}
+
+/*making footer olive green so that it stands out*/
+footer {
+  color: olive;
+}
+
+/*below are styles that are only applied if the element is hovered over*/
+a:hover {
+  color: #8ad2db;
+  background: white;
+}
+
+img:hover {
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+h1:hover {
+  color:olive;
+}
+
+h3:hover {
+  color: black;
+  font-family: cursive;
+  font-size: 200%;
+}
+
+p:hover {
+  background: white;
+  color: skyblue;
+}
+
+figcaption:hover {
+  font-size: 150%;
+  color: palevioletred;
+  background: rgba(255, 233, 236, 0.9);
+}
