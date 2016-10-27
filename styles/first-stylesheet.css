@@ -47,3 +47,26 @@ img {
   margin-bottom: 1em;
 }
 
+/*captions made smaller and centered with images*/
+figcaption {
+  color: azure;
+  font-size: 90%;
+  font-style: italic;
+  font-family: "Palatino Linotype";
+  text-align: center;
+}
+
+/*styling unordered list elements to be white-ish and limited width so that words look fitted inside border*/
+ul {
+  border: 2px dotted azure;
+  color: azure;
+  font-style: italic;
+  width: 30%;
+  margin: auto;
+}
+
+/*making footer olive green so that it stands out*/
+footer {
+  color: olive;
+}
+
