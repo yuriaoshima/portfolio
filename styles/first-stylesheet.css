@@ -70,3 +70,34 @@ footer {
   color: olive;
 }
 
+/*below are styles that are only applied if the element is hovered over*/
+a:hover {
+  color: #8ad2db;
+  background: white;
+}
+
+img:hover {
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+h1:hover {
+  color:olive;
+}
+
+h3:hover {
+  color: black;
+  font-family: cursive;
+  font-size: 200%;
+}
+
+p:hover {
+  background: white;
+  color: skyblue;
+}
+
+figcaption:hover {
+  font-size: 150%;
+  color: palevioletred;
+  background: rgba(255, 233, 236, 0.9);
+}
