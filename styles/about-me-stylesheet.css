@@ -5,6 +5,13 @@ body {
   background-color: rgba(111, 69, 78, 0.8);
 }
 
+header {
+  background: rgba(191, 167, 158, 0.9);
+  padding: 0.5rem;
+  position: fixed;
+  top: 0.5rem;
+}
+
 /*styling h1 heading so that it looks white on a blue-ish background and is italic*/
 h1 {
   color: rgb(231, 233, 186);
@@ -19,6 +26,7 @@ h3 {
   font-size: 160%;
   font-family: 'Indie Flower', cursive;
   text-align: center;
+  margin-bottom: 0;
 }
 
 /*styles all paragraphs to be white-ish on blue-ish background to be consistent. Dashed border for cute look. Padding and margin used to give the element space*/
@@ -28,7 +36,7 @@ p {
   font-size: 150%;
   font-family: 'Indie Flower', cursive;
   padding: 1rem;
-  margin: 1rem;
+  margin-top: 0;
 }
 
 /*links are made white for consistency*/
@@ -39,58 +47,22 @@ a {
 
 /*images are given a border and margins. Also rounded for a nice look*/
 img {
-  width: 30rem;
-  height: 25rem;
-  border-radius: 8px;
+  width: 25rem;
   margin: auto;
   display: block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  float: left;
+  margin: 1rem;
 }
 
-/*captions made smaller and centered with images*/
-figcaption {
-  color: rgb(90, 30, 53);
-  font-size: 110%;
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-  margin: auto;
-}
-
-/*styling unordered list elements to be white-ish and limited width so that words look fitted inside border*/
-div {
-  color: rgb(213, 235, 232);
-  font-family: 'Indie Flower', cursive;
-  font-size: 110%;
-  width: 40%;
-  margin: auto;
+aside img {
+  width: 15rem;
 }
 
 /*styling the footer*/
 footer {
   font-family: 'Indie Flower', cursive;
-  color: rgb(90, 30, 53);
-  background: rgba(191, 167, 158, 0.9);
+  color: rgb(231, 233, 186);
   clear: both;
-  position: fixed;
-  bottom: 0.5rem;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.clear-floats {
-  clear: both;;
-}
-
-.bottom-line-break {
-  clear: both;
-  width: 40rem;
 }
 
 a:hover {
@@ -99,4 +71,19 @@ a:hover {
 
 img:hover {
   filter: grayscale(100%);
+}
+
+section {
+  width: 40rem;
+  float:left;
+  margin-left: 2rem;
+}
+
+aside p {
+  height: 45rem;
+}
+aside {
+  float: left;;
+  width: 20rem;
+  margin-left: 2rem;
 }
