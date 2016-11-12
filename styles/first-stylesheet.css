@@ -3,38 +3,41 @@ html { font-size: 16px}
 /*changing background color of webapge to be a light blue shade*/
 body {
   background-color: rgba(111, 69, 78, 0.8);
+  font-family: 'Indie Flower', cursive;
 }
 
 /*styling h1 heading so that it looks white on a blue-ish background and is italic*/
 h1 {
-  color: rgb(231, 233, 186);
-  font-size: 300%;
-  font-family: 'Indie Flower', cursive;
+  color: floralwhite;
+  font-size: 350%;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 /*styling h3 sub headings to be white-ish on a blue-ish background. Half the size of h1 headers and italic*/
 h3 {
-  color: rgb(231, 233, 186);
+  color: floralwhite;
   font-size: 160%;
-  font-family: 'Indie Flower', cursive;
   text-align: center;
 }
 
 /*styles all paragraphs to be white-ish on blue-ish background to be consistent. Dashed border for cute look. Padding and margin used to give the element space*/
 p {
-  color: rgb(90, 30, 53);
-  background: rgba(191, 167, 158, 0.9);
+  color: rgb(155, 90, 90);
+  background-color: rgb(217, 208, 193);
   font-size: 150%;
-  font-family: 'Indie Flower', cursive;
-  padding: 1rem;
   margin: 1rem;
+  padding: 1rem;
 }
 
 /*links are made white for consistency*/
 a {
-  color: rgb(90, 30, 53);
-  font-family: 'Indie Flower', cursive;
+  color: floralwhite;
+}
+
+p a {
+  color: rgb(155, 90, 90);
 }
 
 /*images are given a border and margins. Also rounded for a nice look*/
@@ -50,9 +53,10 @@ img {
 
 /*captions made smaller and centered with images*/
 figcaption {
-  color: rgb(90, 30, 53);
+  position: relative;
+  top: -27rem;
+  color: papayawhip;
   font-size: 110%;
-  font-family: 'Indie Flower', cursive;
   text-align: center;
   margin: auto;
 }
@@ -60,15 +64,20 @@ figcaption {
 /*styling unordered list elements to be white-ish and limited width so that words look fitted inside border*/
 div {
   color: rgb(213, 235, 232);
-  font-family: 'Indie Flower', cursive;
   font-size: 110%;
   width: 40%;
   margin: auto;
+  position: relative;
+  top: -105rem;
+}
+
+hr {
+  position: relative;
+  top: -105rem;
 }
 
 /*styling the footer*/
 footer {
-  font-family: 'Indie Flower', cursive;
   color: rgb(90, 30, 53);
   background: rgba(191, 167, 158, 0.9);
   clear: both;
@@ -88,15 +97,51 @@ footer {
   clear: both;;
 }
 
-.bottom-line-break {
-  clear: both;
-  width: 40rem;
-}
-
 a:hover {
-  background: azure;
+  background: floralwhite;
+  color: rgb(155, 90, 90);
 }
 
-img:hover {
-  filter: grayscale(100%);
+/*transitions for revealing the photo beneath*/
+
+.bottom {
+  position: relative;
+  top: -27rem;
+}
+
+.top {
+  transition: opacity 3s ease-in-out;
+  position: relative;
+  z-index: 999;
+}
+
+.top:hover {
+  opacity: 0;
+}
+
+section:nth-of-type(3) {
+  position: relative;
+  top: -27rem;
+  left: 1.5rem
+}
+
+section:nth-of-type(4) {
+  position: relative;
+  top: -27rem;
+  left: 3rem;
+}
+
+section:nth-of-type(5) {
+  position: relative;
+  top: -54rem;
+}
+
+section:nth-of-type(6) {
+  position: relative;
+  top: -54rem;
+}
+
+section:nth-of-type(7) {
+  position: relative;
+  top: -81rem;
 }
