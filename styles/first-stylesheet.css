@@ -34,6 +34,8 @@ p {
 /*links are made white for consistency*/
 a {
   color: floralwhite;
+  text-decoration: none;
+  transition: all 0.5s linear;
 }
 
 p a {
@@ -97,9 +99,18 @@ footer {
   clear: both;;
 }
 
+/*transformation of hearts by rotation*/
+.fa-heart-o:hover {
+  display: inline-block;
+  transform: rotate(360deg);
+  transition: all 1s linear;
+}
+
+/*transition for links to get bigger upon hover*/
+
 a:hover {
-  background: floralwhite;
-  color: rgb(155, 90, 90);
+  transition: all 1.5s linear;
+  font-size: 130%;
 }
 
 /*transitions for revealing the photo beneath*/
