@@ -122,7 +122,7 @@ rotating 360 degrees*/
 
 /*transition for links to get bigger upon hover*/
 a:hover {
-  transition: all 1.5s linear;
+  transition: all 1s linear;
   font-size: 130%;
 }
 
