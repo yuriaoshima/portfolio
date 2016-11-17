@@ -2,51 +2,72 @@ html { font-size: 16px}
 
 /*changing background color of webapge to be a light blue shade*/
 body {
-  background-color: rgba(111, 69, 78, 0.8);
+  /*background-color: rgba(111, 69, 78, 0.8);*/
+  background-color: floralwhite;
   font-family: 'Indie Flower', cursive;
 }
 
 header {
-  background-color: rgb(217, 208, 193);
+  color: floralwhite;
+  background-color: rgba(111, 69, 78, 0.8);
   padding: 0.5rem;
-  position: fixed;
-  top: 0.5rem;
 }
 
 /*styling h1 heading so that it looks white on a blue-ish background and is italic*/
 h1 {
-  color: peachpuff;
-  font-size: 300%;
-  text-align: center;
+  color: floralwhite;
+  background-color:  rgba(111, 69, 78, 0.8);
+  font-size: 350%;
+  margin: 0;
+  padding: 3rem 0 1rem 1rem;
 }
 
 /*styling h3 sub headings to be white-ish on a blue-ish background. Half the size of h1 headers and italic*/
 h3 {
-  color: peachpuff;
+  color: floralwhite;
+  background-color: rgba(111, 69, 78, 0.5);
   font-size: 160%;
   text-align: center;
   margin-bottom: 0;
+  font-size: 200%;
+}
+
+h4 {
+  background-color: rgba(111, 69, 78, 0.8);
+  color: floralwhite;
+  margin: 0 0 1rem 0;
+  padding: 1rem 0 2rem 1.5rem;
+  font-size: 120%;
 }
 
 /*styles all paragraphs to be white-ish on blue-ish background to be consistent. Dashed border for cute look. Padding and margin used to give the element space*/
 p {
   color: rgb(155, 90, 90);
-  background-color: rgb(217, 208, 193);
+  border-bottom: 0.1rem dashed;
+  border-left: 0.1rem dashed;
+  border-right: 0.1rem dashed;
   font-size: 150%;
   padding: 1rem;
   margin-top: 0;
 }
 
-/*links are made white for consistency*/
-footer a {
-  color: rgb(217, 208, 193);
+/*using nth-oftype to choose the second paragraph in a section so that the top border is dashed to be consistent with the rest of the paragraphs*/
+p:nth-of-type(2) {
+  border-top: 0.1rem dashed;
 }
 
 a {
-  color: rgb(155, 90, 90);
+  color: floralwhite;
+  text-decoration: none;
+  transition: all 1s linear;
 }
 
-/*images are given a border and margins. Also rounded for a nice look*/
+p a {
+  color: rgb(111, 69, 78);
+}
+
+/*transition so that when the user hovers over an image, 
+the image turns into an oval and black and grey*/
 img {
   width: 25rem;
   display: block;
@@ -56,17 +77,23 @@ img {
 }
 
 aside img {
-  width: 15rem;
+  width: 16rem;
+  padding-top: 2rem;
+}
+
+figcaption {
+  clear: both;
 }
 
 /*styling the footer*/
 footer {
-  color: rgb(217, 208, 193);
+  color: floralwhite;
+  background-color: rgba(111, 69, 78, 0.8);
   clear: both;
 }
 
 a:hover {
-  background: azure;
+  font-size: 150%;
 }
 
 img:hover {
@@ -78,10 +105,11 @@ section {
   width: 40rem;
   float:left;
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 aside p {
-  height: 45rem;
+  height: 77.8rem;
 }
 
 aside {
@@ -89,3 +117,4 @@ aside {
   width: 20rem;
   margin-left: 2rem;
 }
+

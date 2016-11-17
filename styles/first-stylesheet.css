@@ -2,32 +2,39 @@ html { font-size: 16px}
 
 /*changing background color of webapge to be a light blue shade*/
 body {
-  background-color: rgba(111, 69, 78, 0.8);
+  /*background-color: rgba(111, 69, 78, 0.8);*/
+  background-color: floralwhite;
   font-family: 'Indie Flower', cursive;
+}
+
+header {
+  background-color: rgba(111, 69, 78, 0.8);
+  margin: 0;
 }
 
 /*styling h1 heading so that it looks white on a blue-ish background and is italic*/
 h1 {
   color: floralwhite;
+  background-color: rgba(111, 69, 78, 0.8);
   font-size: 350%;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
+  margin: 0;
   text-align: center;
 }
 
 /*styling h3 sub headings to be white-ish on a blue-ish background. Half the size of h1 headers and italic*/
 h3 {
-  color: floralwhite;
+  color: rgba(111, 69, 78, 0.8);
   font-size: 160%;
   text-align: center;
 }
 
 /*styles all paragraphs to be white-ish on blue-ish background to be consistent. Dashed border for cute look. Padding and margin used to give the element space*/
 p {
-  color: rgb(155, 90, 90);
-  background-color: rgb(217, 208, 193);
+  color: floralwhite;
+  background-color: rgba(111, 69, 78, 0.8);
   font-size: 150%;
-  margin: 1rem;
+  margin: 0;
   padding: 1rem;
 }
 
@@ -36,10 +43,6 @@ a {
   color: floralwhite;
   text-decoration: none;
   transition: all 0.5s linear;
-}
-
-p a {
-  color: rgb(155, 90, 90);
 }
 
 /*images are given a border and margins. Also rounded for a nice look*/
@@ -57,7 +60,7 @@ img {
 figcaption {
   position: relative;
   top: -27rem;
-  color: papayawhip;
+  color: rgba(111, 69, 78, 0.8);
   font-size: 110%;
   text-align: center;
   margin: auto;
@@ -65,26 +68,36 @@ figcaption {
 
 /*styling unordered list elements to be white-ish and limited width so that words look fitted inside border*/
 div {
-  color: rgb(213, 235, 232);
+  clear: both;
+  color: rgba(111, 69, 78, 0.8);
+  background-color: rgba(111, 69, 78, 0.8)
   font-size: 110%;
   width: 40%;
   margin: auto;
   position: relative;
-  top: -105rem;
+  left: 2rem;
+  top: -78rem;
+}
+
+div a {
+  color: rgba(111, 69, 78, 0.8);
 }
 
 hr {
+  clear: both;
   position: relative;
-  top: -105rem;
+  top: -78rem;
 }
 
 /*styling the footer*/
 footer {
   color: rgb(90, 30, 53);
-  background: rgba(191, 167, 158, 0.9);
+  background: rgba(111, 69, 78, 0.8);
+  width: 100%;
   clear: both;
   position: fixed;
   bottom: 0.5rem;
+  z-index: 999;
 }
 
 .float-left {
@@ -99,7 +112,8 @@ footer {
   clear: both;;
 }
 
-/*transformation of hearts by rotation*/
+/*adding a transformation so that the hearts look like they are
+rotating 360 degrees*/
 .fa-heart-o:hover {
   display: inline-block;
   transform: rotate(360deg);
@@ -107,29 +121,30 @@ footer {
 }
 
 /*transition for links to get bigger upon hover*/
-
 a:hover {
   transition: all 1.5s linear;
   font-size: 130%;
 }
 
-/*transitions for revealing the photo beneath*/
-
+/*this transition makes it so that when the user hovers over a flower image, the picture beneath gets revealed*/
 .bottom {
   position: relative;
   top: -27rem;
 }
 
+/*transition so that the bottom image gets revealed upon hover*/
 .top {
   transition: opacity 3s ease-in-out;
   position: relative;
-  z-index: 999;
+  z-index: 990;
 }
 
 .top:hover {
   opacity: 0;
 }
 
+/*these nth of type selectors are choosing specific sections
+so that their positions are adjusted to be right below the flower images*/
 section:nth-of-type(3) {
   position: relative;
   top: -27rem;
@@ -150,9 +165,4 @@ section:nth-of-type(5) {
 section:nth-of-type(6) {
   position: relative;
   top: -54rem;
-}
-
-section:nth-of-type(7) {
-  position: relative;
-  top: -81rem;
 }
