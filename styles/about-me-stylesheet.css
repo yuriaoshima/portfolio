@@ -64,6 +64,7 @@ a {
 
 p a {
   color: rgb(111, 69, 78);
+  text-decoration: underline;
 }
 
 /*transition so that when the user hovers over an image, 

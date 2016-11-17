@@ -45,6 +45,10 @@ a {
   transition: all 0.5s linear;
 }
 
+p a {
+  text-decoration: underline;
+}
+
 /*images are given a border and margins. Also rounded for a nice look*/
 img {
   width: 30rem;
