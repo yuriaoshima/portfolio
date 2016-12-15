@@ -2,86 +2,169 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Hobby: Crochet</title>
+    
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   </head>
   
   <body>
-    <header>
-      <nav>
-        <a href="index.html">My Projects</a> |
-        <a href="about-me.html">About Me</a> | 
-        <a href="http://www.google.com">Google</a> |
-        <a href="http://www.facebook.com">Facebook</a> 
-      </nav>
-    </header>
-    
-    <article>
-      <h1>My Hobby Crochet</h1>
-      <h4>An Introduction to the Basics</h4>
-      
-      <section>
-        <h3>A Little Bit About Crochet</h3>
-        <p>Crochet is a craft similar to knitting. However, unlike knitting, crochet is done with a crochet hook instead of two knitting needles. Crochet is also much easier to learn and is a good start for someone who is interested in making simple scarf designs, blanket, headbands, and much more!</p>
-        <p>To get started in crochet is simple. There are only three basic steps you need to know</p>
-      </section>
-      
-      <section>
-        <h3>Step 1: Creating the Slip Knot</h3>
-        <p></p>
-        <img src="" alt="creating a crochet slip knot">
-      </section>
-      
-      <section>
-        <h3>Step 2: Creating a Foundation Chain</h3>
-        <p></p>
-        <img src="" alt="creating a foundation chain">
-      </section>
-      
-      <section>
-        <h3>Step 3: Picking a Crochet Stitch</h3>
-        <p>There are three fundamental basic stitches in crochet. These are the single, double, and triple crochet stitches. A crochet product is made with one or more of these stitch types. There are also more advanced crochet stitches for the fancy patterns. However these are more complicated and must be learned after mastering the three fundamental stitches!</p>
+    <!--the container puts padding all around-->
+    <div class="container">
+      <header>
+        <!--adding a drop down menu for the navigation-->
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Navigation
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="index.html">My Projects</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <article>
+        <div class="page-header">
+          <h1>My Hobby Crochet <small>An Introduction to the Basics</small></h1>
+        </div>
+
         <section>
-          <h3>The Single Crochet Stitch</h3>
-          <p></p>
-          <img src="" alt="the single crochet stitch">
+          <div class="well row">
+            <div class="col-sm-8">
+              <h3>How I Got Involved With Crochet</h3>
+              <p>When I was about six years old, my aunt taught me how to knit. This was when I still lived in China. When I moved to the US, I stopped knitting for fourteen years! After my high school graduation, I moved to Seattle for school where the weather was almost always scarf weather. As a sophomore in college, I wanted to find a new hobby and I also wanted to make my own scarves. I didn't remember how to knit at all and the tutorials looked to complicated to start with. That's when I came upon a crochet tutorial. I began learning how to crochet on my own and pretty soon I was good enough to watch TV and crochet at the same time. I got so good at it, that I started making my friends scarves for Christmas. It's one of my favorite ways to relax and do something fun with myself!</p>
+            </div>
+            <div class="col-sm-4">
+              <img width="320" height="240" src="images/crochet-yarn.jpg" alt="a grey scarf and some balls of yarn">
+            </div>
+          </div>
         </section>
+
         <section>
-          <h3>The Double Crochet Stitch</h3>
-          <p></p>
-          <img src="" alt="the double crochet stitch">
+          <div class="well row">
+            <div class="col-sm-4">
+              <img width="320" height="240" src="images/crochet-needles.jpg" alt="a group of crochet needles">
+            </div>
+            <div class="col-sm-8">
+              <h3>A Little Bit About Crochet</h3>
+              <p>Crochet is a craft similar to knitting. However, unlike knitting, crochet is done with a crochet hook instead of two knitting needles. Crochet is also much easier to learn and is a good start for someone who is interested in making simple scarf designs, blanket, headbands, and much more!</p>
+              <p>To get started in crochet is simple. There are only three basic steps you need to know</p>
+            </div>
+          </div>
         </section>
+
         <section>
-          <h3>The Triple Crochet Stitch</h3>
-          <p></p>
-          <img src="" alt="the triple crochet stitch">
+          <div class="well row">
+            <div class="col-sm-8">
+              <h3>Step 1: Creating the Slip Knot</h3>
+              <p>The slip knot is the fundamental knot for all crochet patterns. In order to begin crocheting, you must first get the yarn onto the crochet hook. This is done through the use of a slip knot.</p>
+            </div>
+            <div class="col-sm-4">
+              <video width="320" height="240" controls>
+                <source src="videos/slip-knot.mp4" type="video/mp4">
+                Your browser does not support video :(
+              </video>
+            </div>
+          </div>
         </section>
-      </section>
-      
-      <section>
-        <h3>Which Stitches Should I Use?</h3>
-        <p></p>
-      </section>
-      
-      <section>
-        <h3>Some Free Crochet Patterns You Can Get Started With</h3>
-        <!--put an unordered list right here-->
-        <ul>
-          <li><a href="">Ravelry</a></li>
-          <li><a href="">Pintrest</a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </section>
-    </article>
-    
-    <footer>
-      <small>&copy; Yurishima, 2016</small>
-      <!--including a second navigation link for easy access at bottom of page-->
-      <nav>
-        <a href="index.html">My Projects</a> |
-        <a href="about-me.html">About Me</a> |
-        <a href="http://www.google.com">Google</a> |
-        <a href="http://www.facebook.com">Facebook</a> 
-      </nav>
-    </footer>
+
+        <section>
+          <div class="well row">
+            <div class="col-sm-8">
+              <h3>Step 2: Creating a Foundation Chain</h3>
+              <p>The foundation chain is the next fundamental step after the slip knot. The foundation chain, is a long chain of single looped stiches. It is used to create the first row of base stitches for your crochet craft. For example, if you were to create a three foot scarf, you would need to create either a three foot foundation chain if you were to crochet the scarf by long rows, or a smaller width chain if you were to crochet the scarf by width. The foundation chain is important to determining the length or width of your product.</p>
+            </div>
+            <div class="col-sm-4">
+              <video width="320" height="240" controls>
+                <source src="videos/foundation-chain.mp4" type="video/mp4">
+                Your browser does not support video :(
+              </video>
+            </div>
+          </div>  
+        </section>
+        
+        <section>
+          <div class="row well">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>Step 3: Picking a Crochet Stitch</h3>
+                <p>There are three fundamental basic stitches in crochet. These are the single, double, and triple crochet stitches. A crochet product is made with one or more of these stitch types. There are also more advanced crochet stitches for the fancy patterns. However these are more complicated and must be learned after mastering the three fundamental stitches!</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>The Single Crochet Stitch</h3>
+                <p>The single crochet stitch is the simplest stitch there is in crochet. The single crochet stitch is a single looped stitch and creates a compact look (if you were to make the entire scarf with single crochet stitches for example). There are many crochets items that you may create with just the single crochet stitch!</p>
+                <video width="320" height="240" controls>
+                  <source src="videos/single-stitch.mp4" type="video/mp4">
+                  Your browser does not support video :(
+                </video>
+              </div>
+              <div class="col-sm-4">
+                <h3>The Double Crochet Stitch</h3>
+                <p>The double crochet stitch is created with two single crochet stitches in the same stitch. What this means is that instead of one loops in the stitch, there are now two. It is created by forming a second loop right after forming the first. The double crochet stitch create a more spaced out design between the rows of your crochet pattern.</p>
+                <video width="320" height="240" controls>
+                  <source src="videos/double-stitch.mp4" type="video/mp4">
+                  Your browser does not support video :(
+                </video>
+              </div>
+              <div class="col-sm-4">
+                <h3>The Triple Crochet Stitch</h3>
+                <p>The tripple crochet stitch has three loops in the same stitch. It is formed by first making one loop and then adding two more loops directly after. The triple crochet stitch creates a very spaced out pattern, as if the rows of your crocheted product have wide spaces separating them.</p>
+                <video width="320" height="240" controls>
+                  <source src="videos/triple-stitch.mp4" type="video/mp4">
+                  Your browser does not support video :(
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="well row">
+            <div class="col-sm-12">
+              <h3>Which Stitches Should I Use?</h3>
+              <p>Which stitch to use depends on the type of look you are going for. The single stitch creates a very compact look while the triple stitch creates a very spaced out look. The double stitch is often a good choice if you are going for something in between. You can also mix stitches (such as alternating between single and double per row). I personally love using a double stitch between two or three single stitch rows.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="well row">
+            <div class="col-sm-12">
+              <h3>Some Free Crochet Patterns You Can Get Started With</h3>
+              <!--put an unordered list right here-->
+              <ul>
+                <li><a href="https://www.ravelry.com">Ravelry</a></li>
+                <li><a href="https://pinterest.com">Pintrest</a></li>
+                <li><a href="http://www.allfreecrochet.com">All Free Crochet</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <footer>
+        <small>&copy; Yurishima, 2016</small>
+        <!--including a second navigation link for easy access at bottom of page-->
+        <nav>
+          <a href="index.html">My Projects</a> |
+          <a href="about-me.html">About Me</a>  
+        </nav>
+      </footer>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
